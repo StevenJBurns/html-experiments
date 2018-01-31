@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Table Test</title>
+    <style>
+	*{font-family:Calibri,Verdana; margin:0; padding:0}
+      html,body{height:100%}
+      header{background: -webkit-linear-gradient(left, #BB7700, #DDDD00); background: -ms-linear-gradient(left, #BB7700, #DDDD00); background: linear-gradient(left, #BB7700, #DDDD00); background-repeat: no-repeat}
+      h1,h2,h3,h4,h5,h6{-webkit-margin-before: 0; -webkit-margin-after: 0; text-align: right}
+      li{display: inline-block}
+	  .Row{display:table-row; height:1px}
+    </style>
+  </head>
+  <body style="display: table; width: 100%; margin: 0; padding:0; color: #FFFFFF; background: #333333; table-layout: fixed">
+    <header class="Row">
+      <h1>Stagecoach</h1>
+      <h4>Wiggins, CO</h4>
+      <img style="display: table-cell; height: 96px; width: 96px; margin: 0; border: none" src="" alt="" />
+    </header>
+    <nav style="background: #777777" class="Row">
+      <ul style="list-style: none; -webkit-margin-before: 0; -webkit-margin-after: 0; -webkit-padding-start: 0">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+      </ul>
+    </nav>
+    <div style="background: #BBBBBB; height: auto" class="Row">
+      <h2 style="text-align:center">Content</h2>
+    </div>
+    <footer style="background: #555555" class="Row">
+      <h6 style="text-align: center">Footer</h6>
+    </footer>
+  </body>
+</html>
