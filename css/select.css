@@ -1,0 +1,19 @@
+* {margin: 0; padding: 0; -webkit-margin-before: 0; -webkit-margin-after: 0}
+
+html {}
+body{color: #FFFFFF; background: #000000; font-family: Calibri,Arial, sans-serif}
+
+#wrapper{background: #373737; border-radius: 8px; width: 512px; height: 216px; position: absolute; left: 50%; top: 50%; margin:-108px 0 0 -248px}
+
+ul{margin: 16px; padding: 8px; list-style: none}
+
+li{margin: 4px; padding: 4px; height: 120px; width: 96px; border-radius:4px; background: #000000; display: inline-block}
+
+li:hover{background: #777777; color: #FFFFFF}
+li.SelectedPlanet{background: #0000FF}
+
+img{height: 96px; width: 96px}
+
+span{margin: 2px; text-align: center; display: block}
+
+button{margin: -16px auto; height: 24px; width: 96px; display: block; bottom: 4px; cursor: default}
