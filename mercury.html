@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>KineticJS Test</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/javascript/kinetic-v4.2.0.min.js"></script>
+    <style>
+      body {background: #777777; padding: 48px}
+      div {background: #000000}
+      canvas{position: relative}
+    </style>
+  </head>
+  <body>
+    <div id="kineticStage">
+    
+    </div>
+    <script>
+      var stage = new Kinetic.Stage({ container: 'kineticStage', width: 800, height: 600 });
+      var layer = new Kinetic.Layer();
+      var sun = new Kinetic.Circle({ x: stage.getWidth() / 2, y: stage.getHeight() / 2, width: 48, height: 48, fill: '#DDDD00', stroke: '#FFFF00', strokeWidth: 2 });
+      var mercury = new Kinetic.Circle({ x: stage.getWidth() / 2, y: (stage.getHeight() / 2), width: 8, height: 8, fill: '#DDDDDD', stroke: '#77777', strokeWidth:2, offset:[0,-50]});
+
+      var background = new Kinetic.Rect({ x: 0, y: 0, width: stage.getWidth(), height: stage.getHeight(), fill: '#000000' })
+
+      //layer.add(background);
+      layer.add(sun);
+      layer.add(mercury);
+      stage.add(layer);
+
+      var angularSpeed = Math.PI;
+      var anim = new Kinetic.Animation(function(frame) {var angleDiff = frame.timeDiff * angularSpeed / 500; mercury.rotate(angleDiff);}, layer);
+      anim.start();
+    </script>
+  </body>
+</html>

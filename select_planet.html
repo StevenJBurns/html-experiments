@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Planet Select</title>
+    <link type="text/css" rel="stylesheet" href="css/select.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="javascript/select.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <span>Select a planet type...</span>
+       <ul>
+        <li data-type='Temperate'>
+          <img src="./content/images/planet_temperate.png" alt="Temperate" />
+          <span>Temperate</span>
+        </li>
+        <li data-type="Barren">
+          <img src="./content/images/planet_barren.png" alt="Barren" />
+          <span>Barren</span>
+        </li>
+        <li data-type="Volcanic">
+          <img src="./content/images/planet_volcanic.png" alt="Volcanic" />
+          <span>Volcanic</span>
+        </li>
+        <li data-type="Frozen">
+          <img src="./content/images/planet_ice.png" alt="Frozen" />
+          <span>Frozen</span>
+        </li>
+      </ul>
+      <button onclick="nextSelectPage()">Continue...</button>
+    </div>
+  </body>
+</html>
